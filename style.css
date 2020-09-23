@@ -1,0 +1,51 @@
+li {display:inline;
+   color:white;
+   padding: .5em;}
+
+li:hover{background-color: white;
+   color:black;}
+
+ul {padding: .5em;}
+
+nav {height: 40px;
+   width: 100%;
+   background-color: #282828;}
+
+.title {font-weight:bold;
+   font-size:20px;}
+
+.carousel {background-color: #C7C7C7;
+   width: 100%;
+   height: 200px;}
+
+.fellows {text-align:center;
+   color: #282828;}
+
+.eat {font-size:17px;}
+
+article {background-color: #C7C7C7;
+   height: 300px;
+   width: 30%;}
+
+.listFellows {display: flex;
+   justify-content: space-around;};
+
+#contactus {color: #282828;}
+
+.contactus {display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   flex-direction: column;
+   width: 60%;}
+
+textarea {height: 150px;}
+
+@media (max-width : 961px){
+   .carousel {display: none;}
+
+   .listFellows{display: none;}
+
+   #contactus{text-align: center;}
+
+   .fellows{font-size: 30px;}
+}
