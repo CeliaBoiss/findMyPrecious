@@ -1,51 +1,140 @@
-li {display:inline;
+.header {
+   display:inline;
    color:white;
-   padding: .5em;}
+   padding: .5em;
+}
 
-li:hover{background-color: white;
-   color:black;}
+.header:hover{
+   background-color: white;
+   color:black;
+}
 
-ul {padding: .5em;}
+ul {
+   padding: .5em;
+}
 
-nav {height: 40px;
+nav {
+   height: 40px;
    width: 100%;
-   background-color: #282828;}
+   background-color: #282828;
+}
 
-.title {font-weight:bold;
-   font-size:20px;}
+.title {
+   font-weight:bold;
+   font-size:20px;
+}
 
-.carousel {background-color: #C7C7C7;
+.carousel {
+   background-color: #C7C7C7;
    width: 100%;
-   height: 200px;}
+   height: 200px;
+}
 
-.fellows {text-align:center;
-   color: #282828;}
+.fellows {
+   text-align:center;
+   color: #282828;
+}
 
-.eat {font-size:17px;}
+.eat {
+   font-size:17px;
+}
 
-article {background-color: #C7C7C7;
+article {
+   background-color: #C7C7C7;
    height: 300px;
-   width: 30%;}
+   width: 30%;
+}
 
-.listFellows {display: flex;
-   justify-content: space-around;};
+.listFellows {
+   display: flex;
+   justify-content: space-around;
+}
 
-#contactus {color: #282828;}
+#contactus {
+   color: #282828;
+}
 
-.contactus {display: flex;
+.contactus {
+   display: flex;
    margin-left: auto;
    margin-right: auto;
    flex-direction: column;
-   width: 60%;}
+   width: 60%;
+   justify-content: space-around;
+   height: 350px;
+}
 
-textarea {height: 150px;}
+textarea {
+   height: 150px;
+}
 
-@media (max-width : 961px){
-   .carousel {display: none;}
+.contactus button {
+   width: auto;
+   align-self: flex-end;
+}
 
-   .listFellows{display: none;}
+a {
+   color: white;
+   text-decoration: none;
+}
 
-   #contactus{text-align: center;}
+.footerListe li:hover{
+   text-decoration: underline;
+}
 
-   .fellows{font-size: 30px;}
+footer{
+   display: flex;
+   background-color: black;
+   color: white;
+}
+
+.footerListe {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   list-style: none;
+}
+
+@media screen and (max-width : 961px){
+
+   #contactus{
+      text-align: center;
+   }
+
+   .fellows{
+      font-size: 30px;
+   }
+
+   .listFellows {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 600px;
+   }
+
+   article {
+      width: 100%;
+      height: 30%;
+   }
+
+   footer{
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+   }
+
+   .footerListe {
+      display: flex;
+      align-items: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      font-size: 12px;
+   }
+
+   #footerP {
+      text-align: center;
+   }
 }
